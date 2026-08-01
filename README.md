@@ -1,25 +1,34 @@
 # IITM-AIARAG-Capstone-Project
 RAG System
-```old
-pip install openai python-dotenv 
-python hello_llm.py 'what is rag agent'
-```
+
 ## Setup
 
-Install dependencies:
+Create and activate your virtual environment, then install dependencies:
 
 ```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
+```
+
+`requirements.txt` already includes:
+
+```text
+openai
+python-dotenv
 ```
 
 ## Run the script
 
-If `python` is not recognized in PowerShell, use the full Python executable path or add Python to your PATH.
-
-Example:
+Use the active virtual environment when running the script:
 
 ```powershell
-C:\Users\kamad\AppData\Local\Python\pythoncore-3.14-64\python.exe hello_llm.py "what is rag agent"
+.\.venv\Scripts\Activate.ps1
+python .\IITM-AIARAG-Capstone-Project\hello_llm.py "what is rag agent"
 ```
 
-If you prefer to use `python` directly, make sure your Python installation directory is in PATH first.
+If `python` is not recognized, use the full Python executable path from the venv:
+
+```powershell
+C:\SRINI\WORKSPACE\IITM\.venv\Scripts\python.exe .\IITM-AIARAG-Capstone-Project\hello_llm.py "what is rag agent"
+```
